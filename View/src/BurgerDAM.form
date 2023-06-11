@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BurgerDAM">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="510" height="754"/>
+    </constraints>
+    <properties>
+      <minimumSize width="405" height="720"/>
+      <preferredSize width="405" height="720"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="3b745" binding="panelCabecera" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-344576"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="4f6bb" class="javax.swing.JLabel" binding="cabecera">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5ea53" binding="panelCompra" layout-manager="BorderLayout" hgap="0" vgap="10">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-344576"/>
+        </properties>
+        <border type="empty">
+          <size top="10" left="0" bottom="10" right="0"/>
+        </border>
+        <children>
+          <grid id="e772a" binding="panelPrecio" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-344576"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d69fb" class="javax.swing.JButton" binding="btnPrecio">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <text value="Calcular Precio"/>
+                </properties>
+              </component>
+              <component id="c028c" class="javax.swing.JLabel" binding="lblPrecioSinIVA">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Precio sin IVA: €"/>
+                </properties>
+              </component>
+              <component id="c1598" class="javax.swing.JLabel" binding="lblIVA">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="IVA: €"/>
+                </properties>
+              </component>
+              <component id="671d1" class="javax.swing.JLabel" binding="lblPrecioConIVA">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Precio Final: €"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="6e5c9" binding="panelPagar" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-344576"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="fd3f3" class="javax.swing.JButton" binding="btnPagar">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <text value="Pagar"/>
+                </properties>
+              </component>
+              <component id="d22d1" class="javax.swing.JLabel" binding="lblGracias">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4521468"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Gracias por realizar la compra."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="8c04e" binding="panelCentral" layout-manager="GridLayoutManager" row-count="19" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-12562103"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="bf01f" class="javax.swing.JLabel" binding="lblBurger">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Tipo de hamburguesa:"/>
+            </properties>
+          </component>
+          <hspacer id="dc464">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="abf82">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="dd93a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Tipo de pan:"/>
+            </properties>
+          </component>
+          <component id="428cf" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Tipo de patatas:"/>
+            </properties>
+          </component>
+          <component id="2c694" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Tipo de bebida:"/>
+            </properties>
+          </component>
+          <component id="d4f7f" class="javax.swing.JCheckBox" binding="checkExtraBurger">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12562103"/>
+              <foreground color="-344576"/>
+              <text value="Hamburguesa doble (+2€)"/>
+            </properties>
+          </component>
+          <component id="8342e" class="javax.swing.JCheckBox" binding="checkExtraQueso">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12562103"/>
+              <foreground color="-344576"/>
+              <text value="Extra de queso (+0,50€)"/>
+            </properties>
+          </component>
+          <component id="521f6" class="javax.swing.JCheckBox" binding="checkExtraPatatas">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12562103"/>
+              <foreground color="-344576"/>
+              <text value="Extra de patatas (+1€)"/>
+            </properties>
+          </component>
+          <vspacer id="32fd2">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="882b0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Ketchup (+0,50€)"/>
+            </properties>
+          </component>
+          <component id="77297" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Barbacoa (+0,50€)"/>
+            </properties>
+          </component>
+          <component id="109a3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Mostaza (+0,50€)"/>
+            </properties>
+          </component>
+          <component id="79c6e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-344576"/>
+              <text value="Thai (+0,50€)"/>
+            </properties>
+          </component>
+          <component id="325b0" class="javax.swing.JComboBox" binding="comboBurger">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Pollo"/>
+                <item value="Cerdo"/>
+                <item value="Ternera (+1€)"/>
+                <item value="Vegana (+1€)"/>
+              </model>
+            </properties>
+          </component>
+          <component id="6d80f" class="javax.swing.JComboBox" binding="comboPan">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Normal"/>
+                <item value="Integral"/>
+                <item value="Centeno"/>
+              </model>
+            </properties>
+          </component>
+          <component id="9f9da" class="javax.swing.JComboBox" binding="comboPatatas">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Fritas"/>
+                <item value="Gajo"/>
+                <item value="Caseras (+1€)"/>
+              </model>
+            </properties>
+          </component>
+          <component id="7e116" class="javax.swing.JComboBox" binding="comboBebida">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Refresco de cola"/>
+                <item value="Refresco de naranja"/>
+                <item value="Refresco de limón"/>
+                <item value="Agua"/>
+                <item value="Cerveza"/>
+              </model>
+            </properties>
+          </component>
+          <component id="88e12" class="javax.swing.JSpinner" binding="spnKetchup">
+            <constraints>
+              <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c012a" class="javax.swing.JSpinner" binding="spnBbq">
+            <constraints>
+              <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="de379" class="javax.swing.JSpinner" binding="spnMostaza">
+            <constraints>
+              <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6fe62" class="javax.swing.JSpinner" binding="spnThai">
+            <constraints>
+              <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="7b204" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4521468"/>
+              <text value="Opciones extra:"/>
+            </properties>
+          </component>
+          <component id="7c15d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4521468"/>
+              <text value="Salsas:"/>
+            </properties>
+          </component>
+          <component id="4cb6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-4521468"/>
+              <text value="Método de entrega:"/>
+            </properties>
+          </component>
+          <component id="edec6" class="javax.swing.JRadioButton" binding="radiusDomicilio">
+            <constraints>
+              <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12562103"/>
+              <foreground color="-344576"/>
+              <text value="Reparto a domicilio"/>
+            </properties>
+          </component>
+          <component id="e31b4" class="javax.swing.JRadioButton" binding="radiusLocal">
+            <constraints>
+              <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12562103"/>
+              <foreground color="-344576"/>
+              <text value="Recogida en el local"/>
+            </properties>
+          </component>
+          <vspacer id="4beea">
+            <constraints>
+              <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
