@@ -1,25 +1,26 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu {
+public class MenuBurger {
 
     //Atributos de la clase
-    private String tipoHamburguesa;
-    private String tipoPan;
-    private String tipoPatatas;
-    private String tipoBebida;
+    private int tipoHamburguesa;
+    private int tipoPan;
+    private int tipoPatatas;
+    private int tipoBebida;
     private boolean extraBurger;
     private boolean extraQueso;
     private boolean extraPatatas;
     private int salsas;
     private boolean repartoDomicilio;
+    private boolean recogidaLocal;
 
     //Constructor
-    public Menu() {
-        this.tipoHamburguesa = "";
-        this.tipoPan = "";
-        this.tipoPatatas = "";
-        this.tipoBebida = "";
+    public MenuBurger() {
+        this.tipoHamburguesa = 0;
+        this.tipoPan = 0;
+        this.tipoPatatas = 0;
+        this.tipoBebida = 0;
         this.extraBurger = false;
         this.extraQueso = false;
         this.extraPatatas = false;
@@ -29,36 +30,40 @@ public class Menu {
     }
 
     //Setters y Getters
-    public String getTipoHamburguesa() {
+    public void setRecogidaLocal(boolean recogidaLocal) {
+        this.recogidaLocal = recogidaLocal;
+    }
+
+    public int getTipoHamburguesa() {
         return tipoHamburguesa;
     }
 
-    public void setTipoHamburguesa(String tipoHamburguesa) {
+    public void setTipoHamburguesa(int tipoHamburguesa) {
         this.tipoHamburguesa = tipoHamburguesa;
     }
 
-    public String getTipoPan() {
+    public int getTipoPan() {
         return tipoPan;
     }
 
-    public void setTipoPan(String tipoPan) {
+    public void setTipoPan(int tipoPan) {
         this.tipoPan = tipoPan;
     }
 
-    public String getTipoPatatas() {
-        return tipoPatatas;
-    }
-
-    public void setTipoPatatas(String tipoPatatas) {
+    public void setTipoPatatas(int tipoPatatas) {
         this.tipoPatatas = tipoPatatas;
     }
 
-    public String getTipoBebida() {
-        return tipoBebida;
+    public int getTipoPatatas() {
+        return tipoPatatas;
     }
 
-    public void setTipoBebida(String tipoBebida) {
+    public void setTipoBebida(int tipoBebida) {
         this.tipoBebida = tipoBebida;
+    }
+
+    public int getTipoBebida() {
+        return tipoBebida;
     }
 
     public void setExtraBurger(boolean extraBurger) {
@@ -90,12 +95,12 @@ public class Menu {
         double precioBase = 8.0;
 
         //Coste adicional tipo de hamburguesa
-        if (tipoHamburguesa.toLowerCase().contains("ternera") || tipoHamburguesa.toLowerCase().contains("vegana")) {
+        if (tipoHamburguesa == 3 || tipoHamburguesa == 4) {
             precioBase += 1.0;
         }
 
         //Coste adicional tipo de patatas
-        if (tipoPatatas.toLowerCase().contains("caseras")) {
+        if (tipoPatatas == 3) {
             precioBase += 1.0;
         }
 
@@ -115,11 +120,11 @@ public class Menu {
         precioBase += costeSalsas;
 
         //Aplica el descuento si es recogida en el local
-        if (!repartoDomicilio) {
+        if (recogidaLocal) {
             precioBase *= 0.8;
         }
 
-        return precioTotalSinIVA;
+        return precioBase;
     }
 
     //Método para calcular IVA
